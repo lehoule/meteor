@@ -189,7 +189,7 @@
     if (email.indexOf('@') !== -1) {
       return true;
     } else {
-      loginButtonsSession.errorMessage("Invalid email");
+      loginButtonsSession.errorMessage("Courriel invalide");
       return false;
     }
   };

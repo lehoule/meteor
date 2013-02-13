@@ -436,10 +436,10 @@
         if (error)
           loginButtonsSession.errorMessage(error.reason || "Unknown error");
         else
-          loginButtonsSession.infoMessage("Email sent");
+          loginButtonsSession.infoMessage("Courriel envoyé");
       });
     } else {
-      loginButtonsSession.errorMessage("Invalid email");
+      loginButtonsSession.errorMessage("Courriel invalide");
     }
   };
 
@@ -475,7 +475,7 @@
       // notably not trimmed. a password could (?) start or end with a space
       var password = elementValueById('login-password');
       if (password !== passwordAgain) {
-        loginButtonsSession.errorMessage("Passwords don't match");
+        loginButtonsSession.errorMessage("Les mots de passe ne sont pas identiques");
         return false;
       }
     }
